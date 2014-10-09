@@ -475,7 +475,7 @@ NSString * const NXOAuth2ClientConnectionContextTokenRefresh = @"tokenRefresh";
                                            accessToken.refreshToken, @"refresh_token",
                                            nil];
         if (self.additionalAuthenticationParameters) {
-            parameters addEntriesFromDictionary:self.additionalAuthenticationParameters];
+            [parameters addEntriesFromDictionary:self.additionalAuthenticationParameters];
         }
         
         if (self.customHeaderFields) {
